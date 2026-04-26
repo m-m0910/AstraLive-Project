@@ -29,6 +29,10 @@ a {
     text-decoration: none;
     color: black;   
 }
+
+.wrapper {
+    margin: 0 150px;
+}
 /* *-----------------------------
     header
 *----------------------------- */
@@ -69,17 +73,49 @@ nav ul{
 /* *-----------------------------
     main
 *----------------------------- */
+
 .mainvisual {
     width: 100%;
-
 }
+
 .mainvisual img {
-    width: 80%;
     display: block;
     margin: 0 auto;
+    position: relative;
 }
-.mainvisual h2 {
+
+.text {
+    position: absolute;
+    top: 355px;
+    left: 100px;
+}
+
+.text h2 {
     font-size: 100px;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text p {
+    font-size: 50px;
+    text-shadow: 3px 2px 2px rgba(105, 105, 105, 0.5);
+    font-weight: bold;
+}
+
+.concept {
+    margin-top: 110px;
+    text-align: center;
+    background-color: #fff;
+    border: solid 5px #C2E2FA;
+    padding: 70px 100px;
+}
+
+.concept h1 {
+    font-size: 50px;
+    transform: translate(0px);
+}
+
+.concept p {
+    margin-top: 20px;
+    font-size: 30px;
 }
