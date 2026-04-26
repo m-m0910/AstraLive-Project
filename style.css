@@ -7,31 +7,20 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 250vh;
-background-size: cover;
-    position: relative;
+    background-size: cover;
+    /* position: relative; */
     background-image: url(/img/bgimg.png);
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-<<<<<<< HEAD
+
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
-=======
->>>>>>> 91c96f41e1b0bcac1cdd7246c3aa6c55c8e1e61f
-/* *-----------------------------
-    header
-*----------------------------- */
-
-
-header {
-    width: 100%;
-
-}
 ul {
     list-style: none;
 }
@@ -40,22 +29,57 @@ a {
     text-decoration: none;
     color: black;   
 }
-
-.list ul {
-    display: flex;
+/* *-----------------------------
+    header
+*----------------------------- */
+header{
+    width: 100%;
 }
 
-.list li {
+
+
+nav li {
     padding-right: 20px;
 }
 
 
-.list,.entrybtn {
+header.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul{
     display: flex;
     align-items: center;
     text-align: right;
-    margin: 20px 40px;
-    justify-content: right;
 }
 
 
+.logo img {
+    width: 200px;
+}
+
+/* *-----------------------------
+    main
+*----------------------------- */
+.mainvisual {
+    width: 100%;
+
+}
+.mainvisual img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.mainvisual h2 {
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
