@@ -113,6 +113,7 @@ nav ul{
 .concept h1 {
     font-size: 50px;
     transform: translate(0px);
+    padding-bottom: 20px;
 }
 
 .concept p {
