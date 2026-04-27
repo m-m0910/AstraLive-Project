@@ -103,10 +103,10 @@ nav ul{
 }
 
 .concept {
-    margin-top: 110px;
+    margin: 110px 0 110px 0;
     text-align: center;
     background-color: #fff;
-    border: solid 5px #C2E2FA;
+    border: solid 3px #C2E2FA;
     padding: 70px 100px;
 }
 
@@ -119,4 +119,22 @@ nav ul{
 .concept p {
     margin-top: 20px;
     font-size: 29px;
+}
+
+
+.tittle {
+    text-align: center;
+}
+
+.required {
+    width: 100%;
+    display: flex;
+}
+.item {
+    width: calc(100% / 3);
+    padding-right: 20px;
+}
+
+.item:last-of-type {
+    padding-right: 0;
 }
