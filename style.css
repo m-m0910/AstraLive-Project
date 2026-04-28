@@ -133,6 +133,7 @@ nav ul{
 .item {
     width: calc(100% / 3);
     padding-right: 20px;
+    text-align: center;
 }
 
 .item:last-of-type {
