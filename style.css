@@ -130,20 +130,32 @@ nav ul{
 }
 
 .tittle {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .required {
     width: 100%;
-    display: flex;
     margin-top: 100px;
 }
-.item {
-    width: calc(100% / 3);
-    padding-right: 20px;
-    text-align: center;
+.items {
+    display: flex;
 }
 
-.item:last-of-type {
-    padding-right: 0;
+.item {
+    text-align: center;
+    padding-bottom: 50px;
 }
+
+.item img {
+    object-fit: cover;
+    width: auto;
+    align-items: center;
+    
+}
+
+.skills {
+    width: 100%;
+    margin-top: 100px;
+}
+
+
