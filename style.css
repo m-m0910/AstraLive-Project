@@ -70,6 +70,11 @@ nav ul{
     width: 200px;
 }
 
+.bg {
+    background-color: #fff;
+    border: solid 3px #C2E2FA;
+}
+
 /* *-----------------------------
     main
 *----------------------------- */
@@ -105,9 +110,7 @@ nav ul{
 .concept {
     margin: 110px 0 110px 0;
     text-align: center;
-    background-color: #fff;
-    border: solid 3px #C2E2FA;
-    padding: 70px 100px;
+    padding: 701x 100px;
 }
 
 .concept h1 {
@@ -126,9 +129,14 @@ nav ul{
     text-align: center;
 }
 
+.tittle {
+    padding-top: 20px;
+}
+
 .required {
     width: 100%;
     display: flex;
+    margin-top: 100px;
 }
 .item {
     width: calc(100% / 3);
