@@ -127,11 +127,9 @@ nav ul{
 
 .tittle {
     text-align: center;
+    padding: 50px;
 }
 
-.tittle {
-    padding-top: 50px;
-}
 
 .required {
     width: 100%;
@@ -158,3 +156,14 @@ nav ul{
     margin-top: 100px;
 }
 
+.skills .item img {
+    width: 80%;
+    margin: 45px 0;
+    box-shadow: 4px 4px 15px gray;
+}
+
+.skills .items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
