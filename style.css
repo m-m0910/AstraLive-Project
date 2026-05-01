@@ -140,14 +140,18 @@ nav ul{
     display: flex;
 }
 
+.required .item img {
+    width: 80%;
+    box-shadow: 0px 0px 12px #00000014;
+}
 .item {
     text-align: center;
     padding-bottom: 50px;
+    
 }
 
 .item img {
     object-fit: cover;
-    width: auto;
     align-items: center;
     
 }
@@ -159,12 +163,9 @@ nav ul{
 
 .skills .item img {
     width: 80%;
-    margin: 45px 0;
-    box-shadow: 0px 0px 15px gray;
+    box-shadow: 5px 5px 12px #00000014;
 }
 
-.skills .items {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+.skills .item h2{
+    padding-top: 20px;
 }
