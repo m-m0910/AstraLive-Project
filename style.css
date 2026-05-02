@@ -80,7 +80,7 @@ nav ul{
     main
 *----------------------------- */
 
-.mainvisual {
+#main {
     width: 100%;
 }
 
@@ -163,7 +163,7 @@ nav ul{
 
 .skills .item img {
     width: 80%;
-    box-shadow: 5px 5px 12px #00000014;
+    box-shadow: 0px 0px 12px #00000014;
 }
 
 .skills .item h2{
