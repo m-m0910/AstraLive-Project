@@ -169,3 +169,12 @@ nav ul{
 .skills .item h2{
     padding-top: 20px;
 }
+
+#flow {
+    margin-top: 100px;
+}
+
+
+#flow .icon img {
+    width: 10%;
+}
