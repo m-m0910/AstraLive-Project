@@ -126,7 +126,7 @@ nav ul{
 
 
 .tittle {
-    text-align: center;
+    text-align: left;
     padding: 50px;
 }
 
@@ -135,7 +135,7 @@ nav ul{
     display: block;
     width: 125px;
     height: 2px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: #E0E3DA;
     margin-top: 10px;
 }
@@ -184,16 +184,15 @@ nav ul{
 }
 
 .flowlist {
-    width: 60%;
+    width: 65%;
     margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 25px;
-    background-color: #D1B6E1;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    margin-bottom: 40px;
+    background-color: #C2E2FA;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-bottom: 50px;
     
 }
 
@@ -205,6 +204,7 @@ nav ul{
 
 .flowlist img {
     width: 20%;
+    padding-right: 10px;
 }
 
 
