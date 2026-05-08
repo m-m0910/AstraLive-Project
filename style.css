@@ -111,7 +111,6 @@ nav ul{
 .concept {
     margin: 110px 0 110px 0;
     text-align: center;
-    padding: 701x 100px;
 }
 
 .concept h1 {
@@ -129,6 +128,16 @@ nav ul{
 .tittle {
     text-align: center;
     padding: 50px;
+}
+
+.tittle::after {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #E0E3DA;
+    margin-top: 10px;
 }
 
 
@@ -174,7 +183,37 @@ nav ul{
     margin-top: 100px;
 }
 
-
-#flow .icon img {
-    width: 10%;
+.flowlist {
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+    background-color: #D1B6E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 40px;
+    
 }
+
+.flowlist p {
+    font-weight: bold;
+    font-size: 1.7rem;
+    right: 20px;
+}
+
+.flowlist img {
+    width: 20%;
+}
+
+
+/* .timeline::before {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #111;
+} */
