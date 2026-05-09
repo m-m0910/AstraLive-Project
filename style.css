@@ -8,7 +8,7 @@ body {
     padding: 0;
     width: 100%;
     background-size: cover;
-    /* position: relative; */
+    position: relative;
     background-image: url(/img/bgimg.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -208,12 +208,106 @@ nav ul{
 }
 
 
-/* .timeline::before {
+#quetion {
+  padding: 100px 0;
+}
+
+
+
+
+#quetion .tittle {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  border: 1px solid #666;
+  background: #eadff0;
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.icon {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.icon::before,
+.icon::after {
   content: "";
   position: absolute;
-  left: 32px;
-  top: 0;
-  width: 2px;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 2px;
   background: #111;
-} */
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq-item.active .icon::after {
+  opacity: 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+  padding: 0 30px 30px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+/* SP */
+@media screen and (max-width: 768px) {
+
+  .faq-question {
+    padding: 20px;
+  }
+
+  .faq-question span {
+    font-size: 18px;
+    padding-right: 20px;
+  }
+
+  .faq-answer p {
+    padding: 0 20px 24px;
+    font-size: 15px;
+  }
+}
