@@ -33,6 +33,21 @@ a {
 .wrapper {
     margin: 0 150px;
 }
+
+.tittle {
+    text-align: left;
+    padding: 50px;
+}
+
+.tittle::after {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 2px;
+    /* margin: 0 auto; */
+    background-color: #E0E3DA;
+    margin-top: 10px;
+}
 /* *-----------------------------
     header
 *----------------------------- */
@@ -63,6 +78,11 @@ nav ul{
     display: flex;
     align-items: center;
     text-align: right;
+    font-weight: bold;
+}
+
+nav a {
+    font-weight: bold;
 }
 
 
@@ -76,6 +96,9 @@ nav ul{
     margin: 0 auto;
 }
 
+.bg:first-of-type {
+    margin-top: 150px;
+}
 /* *-----------------------------
     main
 *----------------------------- */
@@ -125,20 +148,7 @@ nav ul{
 }
 
 
-.tittle {
-    text-align: left;
-    padding: 50px;
-}
 
-.tittle::after {
-    content: "";
-    display: block;
-    width: 125px;
-    height: 2px;
-    /* margin: 0 auto; */
-    background-color: #E0E3DA;
-    margin-top: 10px;
-}
 
 
 .required {
@@ -183,6 +193,16 @@ nav ul{
     margin-top: 100px;
 }
 
+#flow .tittle::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    /* margin: 0 auto; */
+    background-color: #E0E3DA;
+    margin-top: 10px;
+}
+
 .flowlist {
     width: 65%;
     margin-left: auto;
@@ -208,80 +228,80 @@ nav ul{
 }
 
 
-#quetion {
-  padding: 100px 0;
+#question {
+    padding: 100px 0;
+}
+#question .tittle {
+    padding-left: 0;
 }
 
-
-
-
-#quetion .tittle {
-  font-size: clamp(40px, 5vw, 64px);
-  font-weight: 700;
-  margin-bottom: 60px;
+#question .tittle::after {
+    content: "";
+    display: block;
+    width: 190px;
+    height: 2px;
+    /* margin: 0 auto; */
+    background-color: #E0E3DA;
+    margin-top: 10px;
 }
 
 .faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .faq-item {
-  border: 1px solid #666;
-  background: #eadff0;
+    border: 1px solid #666;
+    background: #eadff0;
+}
+
+.faq-item:last-of-type {
+    margin-bottom: 50px;
+}
+
+#question .tittle::after {
+    content: "";
+    display: block;
+    width: 190px;
+    height: 2px;
+    /* margin: 0 auto; */
+    background-color: #E0E3DA;
+    margin-top: 10px;
 }
 
 .faq-question {
-  width: 100%;
-  background: transparent;
-  border: none;
-  padding: 28px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  list-style: none;
   cursor: pointer;
-  text-align: left;
-}
-
-.faq-question span {
+  position: relative;
+  padding: 28px 70px 28px 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.6;
 }
 
-.icon {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
-.icon::before,
-.icon::after {
+.faq-question::before,
+.faq-question::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 30px;
   width: 22px;
   height: 2px;
   background: #111;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
-.icon::after {
-  transform: translate(-50%, -50%) rotate(90deg);
+.faq-question::before {
+  transform: translateY(-50%);
 }
 
-.faq-item.active .icon::after {
+.faq-question::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.faq-item[open] .faq-question::after {
   opacity: 0;
-}
-
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
 }
 
 .faq-answer p {
@@ -290,24 +310,31 @@ nav ul{
   line-height: 1.8;
 }
 
-.faq-item.active .faq-answer {
-  max-height: 300px;
+
+#entry {
+    background: #FCFAFF;
 }
 
-/* SP */
-@media screen and (max-width: 768px) {
+.catch {
+    color: #7E7399;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 550;
+    letter-spacing: 0.08em;
+    margin-bottom: 30px;
+}
 
-  .faq-question {
-    padding: 20px;
-  }
+.catch h2 {
+    margin-top: 20px;
+}
 
-  .faq-question span {
-    font-size: 18px;
-    padding-right: 20px;
-  }
+.btn {
+    display: flex;
+    justify-content: center;
+}
 
-  .faq-answer p {
-    padding: 0 20px 24px;
-    font-size: 15px;
-  }
+.btn img{
+    width: 30%;
+    position: relative;
+    
 }
