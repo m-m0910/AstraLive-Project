@@ -62,7 +62,7 @@ nav li {
 }
 
 
-header.container{
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,6 +106,10 @@ nav a {
 #main {
     width: 100%;
 }
+.main-img {
+    text-align: center;
+}
+
 
 .mainvisual img {
     display: block;
@@ -116,7 +120,7 @@ nav a {
 .text {
     position: absolute;
     top: 355px;
-    left: 100px;
+    left: 200px;
 }
 
 .text h2 {
