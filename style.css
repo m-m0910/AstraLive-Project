@@ -312,12 +312,16 @@ nav a {
 
 
 #entry {
-    background: #FCFAFF;
+    background: #fff;
     padding-bottom: 50px;
 }
 
 .catch {
-    color: #7E7399;
+    color: #6C49B8;
+    text-shadow:
+        0 0 5px rgba(134, 134, 134, 0.6),
+        0 0 10px rgba(177, 177, 177, 0.5),
+        0 0 20px rgba(193, 193, 193, 0.4);
     font-size: 3rem;
     text-align: center;
     font-weight: 550;
@@ -343,4 +347,12 @@ nav a {
     filter: none;
     opacity: 0.7;
     transition: 0.3s;
+}
+/* *-----------------------------
+    footer
+*----------------------------- */
+
+#footer {
+    background-color: #fff;
+
 }
