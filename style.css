@@ -53,12 +53,15 @@ a {
 *----------------------------- */
 header{
     width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
 }
-
 
 
 nav li {
     padding-right: 20px;
+    
 }
 
 
@@ -66,12 +69,13 @@ nav li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
 }
 
 nav {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 nav ul{
@@ -83,11 +87,14 @@ nav ul{
 
 nav a {
     font-weight: bold;
+    font-family: "Shippori Mincho B1", serif;
 }
 
 
 .logo img {
     width: 200px;
+    align-items: center;
+    padding-top: 5px;
 }
 
 .bg {
@@ -121,6 +128,7 @@ nav a {
     position: absolute;
     top: 355px;
     left: 200px;
+    font-family: "Rampart One", sans-serif;
 }
 
 .text h2 {
@@ -179,6 +187,7 @@ nav a {
 .skills {
     width: 100%;
     margin-top: 100px;
+    animation: skills 0.5s ease-out 0s 1 forwards;
 }
 
 .skills .item img {
@@ -189,6 +198,8 @@ nav a {
 .skills .item h2{
     padding-top: 20px;
 }
+
+
 
 #flow {
     margin-top: 100px;
@@ -318,7 +329,7 @@ nav a {
 }
 
 .catch {
-    color: #6C49B8;
+    color: #A593E0;
     text-shadow:
         0 0 5px rgba(134, 134, 134, 0.6),
         0 0 10px rgba(177, 177, 177, 0.5),
@@ -355,13 +366,14 @@ nav a {
 
 #footer {
     background-color: #fff;
-    padding: 50px;
+    padding: 100px;
 
 }
 
 .adress {
-    padding-bottom: 10px;
+    padding-bottom: 35px;
 }
+
 .icon {
     margin: 10px 0;
 }
@@ -371,4 +383,20 @@ nav a {
 }
 .icon img{
     width: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.map {
+    width: 50%;
+    margin: 0 aut10;
 }
