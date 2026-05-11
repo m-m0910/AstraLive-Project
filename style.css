@@ -355,9 +355,13 @@ nav a {
 
 #footer {
     background-color: #fff;
+    padding: 50px;
 
 }
 
+.adress {
+    padding-bottom: 10px;
+}
 .icon {
     margin: 10px 0;
 }
