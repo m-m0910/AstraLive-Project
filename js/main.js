@@ -4,7 +4,8 @@ $(function () {
   ===================================================*/
 
 $(window).scroll(function () {
-    $(".flow").each(function () {
+    $(".flowlist").each(function () {
+      console.log("スクロール");
 
       var scroll = $(window).scrollTop();
 
@@ -14,10 +15,10 @@ $(window).scroll(function () {
 
       if (scroll > target - windowHeight + $(this).outerHeight()) {
         // outerHeight()はpaddingを含めた高さを取得する
-        $(this).addClass("flow");
-      }
+        $(this).addClass("slide");
+      } 
     });
-  });
 
+  });
 
 });

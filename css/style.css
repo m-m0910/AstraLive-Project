@@ -223,7 +223,7 @@ nav a {
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     margin-bottom: 50px;
-    transform: translateX(900px);
+    transform: translateX(100px);
     opacity: 0;
     transition: all 1s;
 }
