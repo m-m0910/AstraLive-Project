@@ -9,7 +9,7 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    background-image: url(/img/bgimg.png);
+    background-image: url(/img/bg2.png);
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
@@ -34,15 +34,19 @@ a {
     margin: 0 150px;
 }
 
-.tittle {
+.title {
     text-align: left;
     padding: 50px;
+    font-family: "Kaisei Decol", serif;
+    color: #5c196b;
+    font-size: 3.5rem;
+    
 }
 
-.tittle::after {
+.title::after {
     content: "";
     display: block;
-    width: 125px;
+    width: 210px;
     height: 2px;
     /* margin: 0 auto; */
     background-color: #E0E3DA;
@@ -75,19 +79,18 @@ nav li {
 nav {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 nav ul{
     display: flex;
     align-items: center;
     text-align: right;
-    font-weight: bold;
 }
 
 nav a {
-    font-weight: bold;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Kaisei Decol", serif;
+    
 }
 
 
@@ -99,7 +102,7 @@ nav a {
 
 .bg {
     background-color: #fff;
-    border: solid 3px #C2E2FA;
+    border: solid 3px #B4D3D9;
     margin: 0 auto;
 }
 
@@ -124,21 +127,27 @@ nav a {
 
 .text {
     position: absolute;
-    top: 355px;
+    top: 265px;
     left: 200px;
     font-family: "Rampart One", sans-serif;
 }
 
 .text h2 {
-    font-size: 100px;
+    font-size: 60px;
     color: white;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    line-height: 1.25;
+    margin-bottom: 20px;
 }
 
 .text p {
-    font-size: 50px;
-    text-shadow: 3px 2px 2px rgba(105, 105, 105, 0.5);
-    font-weight: bold;
+    color: #363636;
+    font-size: 20px;
+    font-family: "Kaisei Decol", serif;
+
+    /* text-shadow: 3px 2px 2px rgba(105, 105, 105, 0.5); */
+    /* font-weight: bold; */
+
 }
 
 .concept {
@@ -146,15 +155,17 @@ nav a {
     text-align: center;
 }
 
-.concept h1 {
+.concept h2 {
     font-size: 50px;
     transform: translate(0px);
     padding-bottom: 20px;
+    font-family: "Kaisei Decol", serif;
+    color: #5c196b;
 }
 
 .concept p {
     margin-top: 20px;
-    font-size: 29px;
+    font-size: 20px;
 }
 
 
@@ -166,7 +177,7 @@ nav a {
     display: flex;
 }
 
-.required .item img {
+#required .item img {
     width: 80%;
     box-shadow: 0px 0px 12px #00000014;
 }
@@ -200,13 +211,13 @@ nav a {
 
 
 #flow {
-    margin-top: 100px;
+    overflow: hidden;
 }
 
-#flow .tittle::after {
+#flow .title::after {
     content: "";
     display: block;
-    width: 160px;
+    width: 280px;
     height: 2px;
     /* margin: 0 auto; */
     background-color: #E0E3DA;
@@ -214,12 +225,12 @@ nav a {
 }
 
 .flowlist {
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #C2E2FA;
+    justify-content: left;
+    background-color: #B4D3D9;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     margin-bottom: 50px;
@@ -234,9 +245,9 @@ nav a {
 }
 
 .flowlist p {
-    font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2.7rem;
     right: 20px;
+    color: #2b2b2b;
 }
 
 .flowlist img {
@@ -247,14 +258,25 @@ nav a {
 #question {
     padding: 100px 0;
 }
-#question .tittle {
+
+#question.title::after {
+    content: "";
+    display: block;
+    width: 330px;
+    height: 2px;
+    /* margin: 0 auto; */
+    background-color: #E0E3DA;
+    margin-top: 10px;
+}
+
+#question .title {
     padding-left: 0;
 }
 
-#question .tittle::after {
+#question .title::after {
     content: "";
     display: block;
-    width: 190px;
+    width: 330px;
     height: 2px;
     /* margin: 0 auto; */
     background-color: #E0E3DA;
@@ -276,15 +298,7 @@ nav a {
     margin-bottom: 50px;
 }
 
-#question .tittle::after {
-    content: "";
-    display: block;
-    width: 190px;
-    height: 2px;
-    /* margin: 0 auto; */
-    background-color: #E0E3DA;
-    margin-top: 10px;
-}
+
 
 .faq-question {
     list-style: none;
@@ -329,7 +343,7 @@ nav a {
 
 #entry {
     background: #fff;
-    padding-bottom: 50px;
+    padding-top: 100px;
 }
 
 .catch {
@@ -370,12 +384,12 @@ nav a {
 
 #footer {
     background-color: #fff;
-    padding: 100px;
+    padding-top: 150px;
 
 }
 
 .adress {
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
 .icon {
@@ -391,16 +405,14 @@ nav a {
 
 .info {
     display: flex;
+    flex-direction: column-reverse;
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0 200px;
 }
 
 .info-text {
-    width: 50%;
-}
-
-.map {
-    width: 50%;
-    margin: 0 aut10;
+    margin-top: 30px;
+    text-align: center;
 }
