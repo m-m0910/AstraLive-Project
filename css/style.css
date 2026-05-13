@@ -155,17 +155,24 @@ nav a {
     text-align: center;
 }
 
-.concept h2 {
+.concept-text {
     font-size: 50px;
     transform: translate(0px);
     padding-bottom: 20px;
     font-family: "Kaisei Decol", serif;
     color: #5c196b;
+    
 }
 
 .concept p {
     margin-top: 20px;
     font-size: 20px;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 1s ease;
 }
 
 
