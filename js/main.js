@@ -3,7 +3,7 @@ $(function () {
   画面に表示されたタイミングで処理を実行
   ===================================================*/
 
-$(window).scroll(function () {
+  $(window).scroll(function () {
     $(".flowlist").each(function () {
       console.log("スクロール");
 
@@ -16,10 +16,10 @@ $(window).scroll(function () {
       if (scroll > target - windowHeight + $(this).outerHeight()) {
         // outerHeight()はpaddingを含めた高さを取得する
         $(this).addClass("slide");
-      } 
+      }
     });
-  
-        // concept-textクラスに対して順に処理を行う
+
+    // concept-textクラスに対して順に処理を行う
     $(".fade-up").each(function () {
       // スクロールした距離
       let scroll = $(window).scrollTop();
@@ -36,4 +36,23 @@ $(window).scroll(function () {
     });
   });
 
+$(window).on("scroll load",function () {    // concept-textクラスに対して順に処理を行う
+    $(".zoom-in").each(function () {
+      // スクロールした距離
+      let scroll = $(window).scrollTop();
+      // fadeinクラスの要素までの距離
+      let target = $(this).offset().top;
+      // 画面の高さ
+      let windowHeight = $(window).height();
+      // concept-textクラスの要素が画面下にきてから200px通過した
+      // したタイミングで要素を表示
+      if (scroll > target - windowHeight + 100) {
+        $(this).css("opacity", "1");
+        $(this).css("transform", "scale(1.5)");
+      }
+    });
   });
+});
+
+
+
