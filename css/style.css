@@ -125,6 +125,9 @@ nav a {
     main
 *----------------------------- */
 
+#about {
+    scroll-margin-top: 80px;
+}
 
 .main-img {
     text-align: center;
@@ -187,6 +190,7 @@ nav a {
 #required {
     width: 100%;
     margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 .items {
     display: flex;
@@ -212,6 +216,7 @@ nav a {
     width: 100%;
     margin-top: 100px;
     animation: skills 0.5s ease-out 0s 1 forwards;
+    scroll-margin-top: 80px;
 }
 
 #skills .item img {
@@ -241,6 +246,7 @@ nav a {
 
 .flowlist {
     width: 60%;
+    height: 125px;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -264,19 +270,29 @@ nav a {
     right: 20px;
     color: #2b2b2b;
     padding: 10px;
+    padding-left: 30px;
 }
 
 .flowlist img {
-    width: 15%;
+    width:20%;
     border-radius: 50%;
-    margin-left: 10px;
-    object-fit: cover;
-    
+    margin-left: -15px
 }
 
+.flowlist:nth-of-type(3) img ,.flowlist:nth-of-type(5) img {
+    width:20%;
+    position: relative;
+
+    bottom: -8px;
+}
+
+.caution {
+    text-align: right;
+}
 
 #question {
     padding: 100px 0;
+    scroll-margin-top: 80px;
 }
 
 #question.title::after {
