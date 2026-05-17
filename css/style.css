@@ -64,9 +64,9 @@ a {
     transform: scale(0.5);
     transition: all 0.5s ease;
 }
-/* *-----------------------------
+/* -----------------------------
     header
-*----------------------------- */
+----------------------------- */
 header{
     width: 100%;
     background-color: #fff;
@@ -105,6 +105,114 @@ nav a {
     
 }
 
+.entry-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 36px;
+  border-radius: 100px;
+  background: rgba(255,255,255,.72);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow:
+    0 4px 18px rgba(180,140,255,.18),
+    inset 0 1px 0 rgba(255,255,255,.85);
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.entry-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(185,150,255,.45);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.55),
+      rgba(215,190,255,.15)
+    );
+}
+
+.entry-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background:
+    linear-gradient(
+      90deg,
+      #C8AEFF 0%,
+      #B692FF 45%,
+      #E8DCFF 100%
+    );
+  box-shadow:
+    0 0 18px rgba(180,140,255,.45);
+
+  transition:
+    width .55s cubic-bezier(.22,1,.36,1);
+}
+
+.entry-text {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: .18em;
+  font-weight: 600;
+  color: #6E4FCB;
+  transition:
+    color .35s ease,;
+    text-shadow: .35s ease;
+}
+
+.entry-btn::after {
+  content: "✦";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: rgba(255,255,255,.9);
+  opacity: .75;
+  transition:
+    transform .45s ease,
+    opacity .35s ease;
+}
+
+.entry-btn:hover .entry-fill {
+  width: 100%;
+}
+
+.entry-btn:hover .entry-text {
+  color: white;
+
+  text-shadow:
+    0 0 12px rgba(255,255,255,.55);
+}
+
+.entry-btn:hover::after {
+  transform:
+    translateY(-50%)
+    rotate(90deg)
+    scale(1.15);
+
+  opacity: 1;
+}
+
+.entry-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 10px 28px rgba(180,140,255,.28),
+    inset 0 1px 0 rgba(255,255,255,.95);
+}
+
+
 
 .logo img {
     width: 200px;
@@ -131,13 +239,6 @@ nav a {
 
 .main-img {
     text-align: center;
-}
-
-
-.mainvisual img {
-    display: block;
-    margin: 0 auto;
-    position: relative;
 }
 
 .text {
@@ -410,7 +511,7 @@ nav a {
     opacity: 0.7;
     transition: 0.3s;
 }
-/* *-----------------------------
+/* -----------------------------
     footer
 *----------------------------- */
 
@@ -446,4 +547,63 @@ nav a {
 .info-text {
     margin-top: 30px;
     text-align: center;
+}
+
+/* -----------------------------
+    entrypage
+----------------------------- */
+.entry-page {
+    background-image: none;
+}
+
+
+/* -----------------------------
+    SP
+*----------------------------- */
+
+
+@media (max-width:900px){
+
+    .wrapper{
+        margin: 0 50px;
+    }
+    .concept {
+    margin: 65px 0 65px 0;
+}
+
+.text {
+    top: 200px;
+    left: 130px;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.item p {
+    font-size: 0.85rem;
+}
+
+#flow .title::after {
+    width: 240px;
+}
+
+.flowlist {
+    height: 85px;
+}
+
+.flowlist p {
+    font-size: 1.7rem;
+}
+
+.flowlist:nth-of-type(3) img ,.flowlist:nth-of-type(5) img {
+
+    bottom: -5px;
+}
+.catch {
+    font-size: 1.75rem;
+}
+
+
+
 }
