@@ -552,18 +552,81 @@ nav a {
     entrypage
 ----------------------------- */
 .entry-page {
-    background-image: none;
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family:'Noto Sans JP',sans-serif;
+    background:#f7f2ff;
+    color:#6b5ca5;
+    overflow-x:hidden;
 }
 
-.form-title {
+.entry-page::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+    radial-gradient(circle at top left,#d9c5ff 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#e9d6ff 0%,transparent 30%),
+    linear-gradient(to bottom,#f8f4ff,#f6f1ff);
+    z-index: -2;
+}
+
+.entry-page::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(#ffffffaa 1px, transparent 1px);
+        z-index: -1;
+        opacity: 0.3;
+        background-size: 40px 40px;
+}
+.phrase {
+    text-align: center;
+    padding: 40px;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 90px;
+}
+
+.step{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#9d8fd0;
+    font-size:14px;
+    }
+
+.circle {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background:#c8b0ff;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        display: flex;
+    }
+
+.section-title {
     text-align: center;
     color: #2f2f2f;
-    padding: 100px 0 150px 0;
-    
+    padding: 60px 0 150px 0;
 }
+
+input,text {
+    background-color: #fff;
+    border: 1px solid #111;
+}
+
+
+
+
 
 
 /* -----------------------------
