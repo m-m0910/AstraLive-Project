@@ -106,20 +106,20 @@ nav a {
 }
 
 .entry-btn {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 140px;
-  height: 36px;
-  border-radius: 100px;
-  background: rgba(255,255,255,.72);
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow:
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    border-radius: 100px;
+    background: rgba(255,255,255,.72);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:
     0 4px 18px rgba(180,140,255,.18),
     inset 0 1px 0 rgba(255,255,255,.85);
-  transition:
+    transition:
     transform .35s ease,
     box-shadow .35s ease;
 }
@@ -592,6 +592,7 @@ nav a {
     align-items: center;
     justify-content:center;
     gap: 90px;
+    margin-bottom: 25px;
 }
 
 .step{
@@ -615,9 +616,10 @@ nav a {
 
 .section-title {
     text-align: center;
-    color: #2f2f2f;
-    padding: 60px 0 40px 0;
+    color: #444444;
+    padding-bottom:25px ;
     font-size: 25px;
+    font-family: "Kaisei Decol", serif;
 }
 
 input,text {
@@ -637,8 +639,28 @@ input,text {
 }
 
 
+textarea {
+    width: 100%;
+    align-items: center;
+}
 
+span {
+  color: #fa4343;
+  font-size: 1rem;
+  font-family: "Rampart One", sans-serif;
+}
 
+.upload-date  {
+  text-align: center;
+}
+.upload-date p:last-of-type {
+  color: #666;
+  margin-top: 15px;
+}
+
+.upload-date p:first-child {
+  padding-bottom: 10px;
+}
 /* -----------------------------
     SP
 *----------------------------- */
