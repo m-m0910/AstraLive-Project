@@ -648,6 +648,7 @@ span {
   color: #fa4343;
   font-size: 1rem;
   font-family: "Rampart One", sans-serif;
+  padding-left: 5px;
 }
 
 .upload-date  {
@@ -661,6 +662,7 @@ span {
 .upload-date p:first-child {
   padding-bottom: 10px;
 }
+
 /* -----------------------------
     SP
 *----------------------------- */
