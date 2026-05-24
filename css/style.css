@@ -147,7 +147,7 @@ nav a {
 
 .entry-fill {
   position: absolute;
-  left: 0px;
+  left: -3px;
   top: 0;
   width: 0%;
   height: 100%;
@@ -192,7 +192,7 @@ nav a {
 }
 
 .entry-btn:hover .entry-fill {
-  width: 100%;
+  width: 102%;
 }
 
 .entry-btn:hover .entry-text {
