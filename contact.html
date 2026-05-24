@@ -1,152 +1,193 @@
 <!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entry Page</title>
+    <link rel="icon" href="favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>entry page</title>
-  <link rel="icon" href="favicon.ico" />
+    <meta property="og:image" content="画像のURL" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <meta property="og:image" content="画像のURL" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body class="entry-page">
-  <div class="phrase">
-    <h1>
-      Vtuberオーディション <br />
-      応募フォーム
-    </h1>
-    <p class="desc">
-      夢への第一歩を、ここから。<br />
-      あなたの声と想いを、私たちは待っています。
-    </p>
-  </div>
-  <div class="main-form">
-    <div class="steps">
-      <div class="step">
-        <div class="circle">1</div>
-        入力
-      </div>
-      <div class="step">
-        <div class="circle">2</div>
-        確認
-      </div>
-      <div class="step">
-        <div class="circle">3</div>
-        完了
-      </div>
+  <body class="entry-page">
+    <div class="phrase">
+      <h1>
+        Vtuberオーディション <br />
+        応募フォーム
+      </h1>
+      <p class="desc">
+        夢への第一歩を、ここから。<br />
+        あなたの声と想いを、私たちは待っています。
+      </p>
     </div>
-    <form>
-      <section id="name">
-        <h2 class="section-title">
-          SECTION 01 基本情報
-          <span class="required">必須</span>
-        </h2>
-        <div class="form-group">
-          <label>名前（本名）</label>
-          <input type="text" />
+    <div class="main-form">
+      <div class="steps">
+        <div class="step">
+          <div class="circle">1</div>
+          入力
         </div>
-        <div class="form-group">
-          <label>名前（フリガナ）</label>
-
-          <input type="text" />
+        <div class="step">
+          <div class="circle">2</div>
+          確認
         </div>
-        <div class="form-group">
-          <label>年齢</label>
-          <input type="number" />
+        <div class="step">
+          <div class="circle">3</div>
+          完了
         </div>
-        <div class="form-group">
-          <label>性別</label>
-
-          <div class="gender">
-            <label><input type="radio" name="gender" /> 男性</label>
-            <label><input type="radio" name="gender" /> 女性</label>
-            <label><input type="radio" name="gender" /> その他</label>
+      </div>
+      <form>
+        <section id="name">
+          <h2 class="section-title">
+            SECTION 01 基本情報
+            <span class="required">必須</span>
+          </h2>
+          <div class="form-group">
+            <label>名前（本名）</label>
+            <input type="text" />
           </div>
+          <div class="form-group">
+            <label>名前（フリガナ）</label>
+
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label>年齢</label>
+            <input type="number" />
+          </div>
+          <div class="form-group">
+            <label>性別</label>
+
+            <div class="gender">
+              <label><input type="radio" name="gender" /> 男性</label>
+              <label><input type="radio" name="gender" /> 女性</label>
+              <label><input type="radio" name="gender" /> その他</label>
+            </div>
+          </div>
+        </section>
+
+        <section id="adress">
+          <h2 class="section-title">
+            SECTION 02 連絡先
+            <span class="required">必須</span>
+          </h2>
+          <div class="form-group">
+            <label>メールアドレス</label>
+            <input type="email" />
+          </div>
+          <div class="form-group">
+            <label>電話番号</label>
+            <input type="tel" />
+          </div>
+        </section>
+
+        <section id="date">
+          <h2 class="section-title">
+            SECTION 03 ボイスデータ
+            <span class="required">必須</span>
+          </h2>
+
+          <div class="upload-date">
+            <p>ここにファイルをドラッグ＆ドロップ</p>
+            <input type="file" id="fileInput" hidden />
+            <a
+              href="#"
+              class="upload-btn"
+              onclick="
+                document.getElementById('fileInput').click();
+                return false;
+              "
+            >
+              ファイルを選択
+            </a>
+            <p>※mp3 / wav 推奨 │ ファイルサイズ：100MB以内</p>
+          </div>
+        </section>
+
+        <section id="aspiration">
+          <h2 class="section-title">
+            SECTION 04 志望動機
+            <span class="required">必須</span>
+          </h2>
+
+          <div class="form-group">
+            <textarea
+              placeholder="Vtuberになりたい理由、どんな活動がしたいか自由にお書きください"
+            ></textarea>
+          </div>
+        </section>
+
+        <section id="good">
+          <h2 class="section-title">
+            SECTION 05 あなたの得意を教えてください
+            <span class="any">任意</span>
+          </h2>
+
+          <div class="form-group">
+            <label>あなたが今までにやりこんだゲームを教えてください</label>
+            <textarea
+              placeholder="例：APEX、スプラトゥーン、VALORANT、原神 (複数可)"
+            ></textarea>
+            <p>※カンマで区切ってください</p>
+          </div>
+          <div class="form-group">
+            <label>あなたが今までに企画した内容を教えてください</label>
+            <textarea
+              class="count-text"
+              placeholder="何か企画したものがあればお書きください"
+            ></textarea>
+            <p class="count">0/500字</p>
+          </div>
+          <div class="form-group">
+            <label>その他アピールしたいことがあればお書きください</label>
+            <textarea
+              class="count-text"
+              placeholder="特技、活動実績などあればお書きください"
+            ></textarea>
+            <p class="count">0/500字</p>
+          </div>
+        </section>
+        
+        <div class="agree">
+          <input type="checkbox" />
+          <p>応募要項・プライバシーポリシーに同意します</p>
         </div>
-      </section>
 
-      <section id="adress">
-        <h2 class="section-title">
-          SECTION 02 連絡先
-          <span class="required">必須</span>
-        </h2>
-        <div class="form-group">
-          <label>メールアドレス</label>
-          <input type="email" />
-        </div>
-        <div class="form-group">
-          <label>電話番号</label>
-          <input type="tel" />
-        </div>
-      </section>
+        <section id="contact-entry">
+          <a href="#" class="btn"
+            ><img src="/img/entry.png" alt="ENTRYボタン"
+          /></a>
 
-      <section id="date">
-        <h2 class="section-title">SECTION 03 ボイスデータ
-          <span class="required">必須</span>
-        </h2>
+          <p>ご入力いただいた個人情報は、選考以外の目的では使用いたしません。<br>厳重に管理し、選考終了後は破棄いたします。</p>
+        </section>
+      </form>
 
-        <div class="upload-date">
-          <p>ここにファイルをドラッグ＆ドロップ</p>
-          <input type="file" id="fileInput" hidden>
-          <a href="#" class="upload-btn" onclick="document.getElementById('fileInput').click(); return false;"> ファイルを選択
-          </a>
-          <p>※mp3 / wav 推奨 │ ファイルサイズ：100MB以内</p>
-        </div>
-      </section>
+      <footer></footer>
+    </div>
 
-
-      <section id="aspiration">
-        <h2 class="section-title">
-          SECTION 04 志望動機
-          <span class="required">必須</span>
-        </h2>
-
-        <div class="form-group">
-          <textarea placeholder="Vtuberになりたい理由、どんな活動がしたいか自由にお書きください"></textarea>
-        </div>
-      </section>
-
-      <section id="good">
-        <h2 class="section-title">
-          SECTION 05 あなたの得意を教えてください
-          <span class="any">任意</span>
-        </h2>
-
-        <div class="form-group">
-          <label>あなたが今までにやりこんだゲームを教えてください</label>
-          <input type="text" />
-        </div>
-        <div class="form-group">
-          <label>あなたが今までに企画した内容を教えてください</label>
-          <input type="text" />
-        </div>
-        <div class="form-group">
-          <label>その他アピールしたいことがあればお書きください</label>
-          <input type="text" />
-        </div>
-      </section>
-    </form>
-  </div>
-
-  <script>
-    const fileInput = document.getElementById('fileInput');
-    const fileName = document.getElementById("fileName");
-    fileInput.addEventListener("change", () => {
-      if (fileInput.files.length > 0) {
-        fileName.textContent = fileInput.files[0].name;
-      }
-    });
-  </script>
-</body>
-
+    <script>
+      const fileInput = document.getElementById("fileInput");
+      const fileName = document.getElementById("fileName");
+      fileInput.addEventListener("change", () => {
+        if (fileInput.files.length > 0) {
+          fileName.textContent = fileInput.files[0].name;
+        }
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

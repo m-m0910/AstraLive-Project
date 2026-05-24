@@ -54,5 +54,11 @@ $(window).on("scroll load",function () {    // concept-textクラスに対して
   });
 });
 
+$(".count-text") .on("input",function(){
+  let textLength = $(this).val().length;
 
+$(this)
+      .siblings(".count")
+      .text(textLength + "/500字");
 
+});
