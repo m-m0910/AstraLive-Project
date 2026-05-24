@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
+    <meta name="format-detection" content="telephone=no">
     <title>Entry Page</title>
     <link rel="icon" href="favicon.ico" />
 
@@ -42,10 +44,6 @@
         </div>
         <div class="step">
           <div class="circle">2</div>
-          確認
-        </div>
-        <div class="step">
-          <div class="circle">3</div>
           完了
         </div>
       </div>
@@ -57,21 +55,21 @@
           </h2>
           <div class="form-group">
             <label>名前（本名）</label>
-            <input type="text" />
+            <input type="text" required="required" id="real-name" />
           </div>
           <div class="form-group">
             <label>名前（フリガナ）</label>
 
-            <input type="text" />
+            <input type="text" required="required" id="real-name-kana" />
           </div>
           <div class="form-group">
             <label>年齢</label>
-            <input type="number" />
+            <input type="number" required="required" id="age" />
           </div>
           <div class="form-group">
             <label>性別</label>
 
-            <div class="gender">
+            <div class="gender" id="gender" required="required">
               <label><input type="radio" name="gender" /> 男性</label>
               <label><input type="radio" name="gender" /> 女性</label>
               <label><input type="radio" name="gender" /> その他</label>
@@ -86,11 +84,11 @@
           </h2>
           <div class="form-group">
             <label>メールアドレス</label>
-            <input type="email" />
+            <input type="email" required="required" id="mail" />
           </div>
           <div class="form-group">
             <label>電話番号</label>
-            <input type="tel" />
+            <input type="tel" required="required" id="number" />
           </div>
         </section>
 
@@ -102,7 +100,7 @@
 
           <div class="upload-date">
             <p>ここにファイルをドラッグ＆ドロップ</p>
-            <input type="file" id="fileInput" hidden />
+            <input type="file" id="fileInput" hidden required="required" />
             <a
               href="#"
               class="upload-btn"
@@ -126,6 +124,7 @@
           <div class="form-group">
             <textarea
               placeholder="Vtuberになりたい理由、どんな活動がしたいか自由にお書きください"
+              id="reason" required="required"
             ></textarea>
           </div>
         </section>
@@ -140,6 +139,7 @@
             <label>あなたが今までにやりこんだゲームを教えてください</label>
             <textarea
               placeholder="例：APEX、スプラトゥーン、VALORANT、原神 (複数可)"
+              id="game"
             ></textarea>
             <p>※カンマで区切ってください</p>
           </div>
@@ -148,6 +148,7 @@
             <textarea
               class="count-text"
               placeholder="何か企画したものがあればお書きください"
+              id="plan"
             ></textarea>
             <p class="count">0/500字</p>
           </div>
@@ -156,22 +157,25 @@
             <textarea
               class="count-text"
               placeholder="特技、活動実績などあればお書きください"
+              id="appeal"
             ></textarea>
             <p class="count">0/500字</p>
           </div>
         </section>
-        
+
         <div class="agree">
-          <input type="checkbox" />
+          <input type="checkbox" id="agree"/>
           <p>応募要項・プライバシーポリシーに同意します</p>
         </div>
 
         <section id="contact-entry">
-          <a href="#" class="btn"
-            ><img src="/img/entry.png" alt="ENTRYボタン"
+          <a href="thanks.html" class="btn"
+            ><img src="/img/sent.png" alt="ENTRYボタン"
           /></a>
 
-          <p>ご入力いただいた個人情報は、選考以外の目的では使用いたしません。<br>厳重に管理し、選考終了後は破棄いたします。</p>
+          <p>
+            ご入力いただいた個人情報は、選考以外の目的では使用いたしません。<br />厳重に管理し、選考終了後は破棄いたします。
+          </p>
         </section>
       </form>
 

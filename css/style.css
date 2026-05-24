@@ -14,6 +14,7 @@ body {
     background-position: center;
     box-sizing: border-box;
     overflow-x: hidden;
+    color: #666;
 }
 
 
@@ -63,6 +64,12 @@ a {
     opacity: 0;
     transform: scale(0.5);
     transition: all 0.5s ease;
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 1s ease;
 }
 /* -----------------------------
     header
@@ -522,6 +529,10 @@ nav a {
     padding-bottom: 25px;
 }
 
+.adress p,.contact p {
+    color: #444444;
+}
+
 .icon {
     margin: 10px 0;
 }
@@ -581,6 +592,8 @@ nav a {
         opacity: 0.3;
         background-size: 40px 40px;
 }
+
+
 .phrase {
     text-align: center;
     padding: 40px;
@@ -619,7 +632,8 @@ nav a {
     justify-content: center;
     font-weight: 700;
     display: flex;
-    }
+}
+
 
 .section-title {
     text-align: center;
@@ -670,7 +684,7 @@ input[type="radio"] {
 
 textarea {
     width: 100%;
-    border:2px solid #c9b3d8;
+    border:1px solid #c9b3d8;
     box-sizing: border-box;
     outline: none;
     padding: 12px;
@@ -758,6 +772,27 @@ input[type="checkbox"] {
     accent-color: #716491;
 }
 
+#contact-entry p {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    font-size: 0.75rem;
+    margin-bottom: 100px;
+}
+
+
+/* -----------------------------
+    thanks
+*----------------------------- */
+.complete {
+    text-align: center;
+    margin: 75px 0;
+}
+
+.thanks img {
+    margin-top: 20px;
+    width: 50%;
+}
 
 /* -----------------------------
     SP
