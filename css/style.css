@@ -71,6 +71,16 @@ a {
     transform: translateX(10px);
     transition: all 1s ease;
 }
+
+/* -----------------------------
+    loading
+----------------------------- */
+.loading {
+    opacity: 0;
+    overflow: hidden;
+}
+
+
 /* -----------------------------
     header
 ----------------------------- */
@@ -232,7 +242,7 @@ nav a {
 }
 
 .bg:first-of-type {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 /* *-----------------------------
     main
@@ -244,6 +254,8 @@ nav a {
 
 .main-img {
     text-align: center;
+    width: 100%;
+    margin-top: 60px;
 }
 
 .text {
@@ -808,6 +820,10 @@ input[type="checkbox"] {
     margin: 65px 0 65px 0;
 }
 
+nav li {
+    font-size: 0.85rem;
+}
+
 .text {
     top: 200px;
     left: 130px;
@@ -815,6 +831,19 @@ input[type="checkbox"] {
 
 .title {
     font-size: 3rem;
+    padding: 30px;
+}
+
+.items {
+    flex-direction: column;
+}
+
+#required .item img {
+    width: 50%;
+}
+
+#skills .item img {
+    width: 50%;
 }
 
 .item p {
