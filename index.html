@@ -1,246 +1,259 @@
 <!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstraLive Project</title>
+    <link rel="icon" href="favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AstraLive Project</title>
-  <link rel="icon" href="favicon.ico" />
+    <meta property="og:image" content="画像のURL" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <meta property="og:image" content="画像のURL" />
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Kaisei+Decol&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <header id="header">
+      <h1>
+        <a href="#" class="logo"
+          ><img src="/img/logo2.PNG" alt="サイトのロゴ"
+        /></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">事務所について</a></li>
+          <li><a href="#required">募集要項</a></li>
+          <li><a href="#skills">歓迎条件</a></li>
+          <li><a href="#flow">選考フロー</a></li>
+          <li><a href="#question">よくある質問</a></li>
+        </ul>
+        <a href="#entry" class="entry-btn">
+          <span class="entry-fill"></span>
+          <span class="entry-text">ENTRY</span>
+        </a>
+      </nav>
+    </header>
 
-<body>
-  <!-- ローディング画面 -->
-   <div id="loadeing" class="loading">
-    <img src="/img/loading.png" alt="">
+    <main>
+      <div class="wrapper">
+        <div class="main-img">
+          <img src="/img/main2.png" alt="" />
+        </div>
+        <div class="text">
+          <h2>次のスターは、<br />あなたかもしれない。</h2>
+          <p>新世代Vtuberプロジェクトメンバー募集</p>
+        </div>
+        <section id="about">
+          <div class="bg">
+            <div class="concept">
+              <h2 class="concept-text fade-up">ASTRALIVE Projectとは</h2>
+              <p class="fade-up">
+                ASTRALIVEは、個性あふれるタレントが集まるVTuber事務所です。<br />
+                ゲーム、歌、雑談、それぞれの好きが星のように輝き、<br />
+                配信を通してたくさんの出会いと楽しさを届けます。<br />
+                あなたの日常を彩る、新しい物語をここから。
+              </p>
+            </div>
+          </div>
+        </section>
 
-   </div>
-  <header id="header">
-    <h1>
-      <a href="#" class="logo"><img src="/img/logo2.PNG" alt="サイトのロゴ" /></a>
-    </h1>
-    <nav>
-      <ul>
-        <li><a href="#about">事務所について</a></li>
-        <li><a href="#required">募集要項</a></li>
-        <li><a href="#skills">歓迎条件</a></li>
-        <li><a href="#flow">選考フロー</a></li>
-        <li><a href="#question">よくある質問</a></li>
-      </ul>
-      <a href="#entry" class="entry-btn">
-        <span class="entry-fill"></span>
-        <span class="entry-text">ENTRY</span>
-      </a>
-    </nav>
-  </header>
+        <section id="required">
+          <div class="bg">
+            <h2 class="title fade-up">必須条件</h2>
+            <div class="items">
+              <div class="item">
+                <img src="/img/国籍不問.png" alt="" />
+                <h3>国籍・性別は問いません</h3>
+                <p>※日本語でコミュケーションができる方</p>
+              </div>
+              <div class="item">
+                <img src="/img/18歳.png" alt="" />
+                <h3>18歳以上の方</h3>
+                <p>※高校在学生は応募不可</p>
+              </div>
+              <div class="item">
+                <img src="/img/モニター.png" alt="" />
+                <h3>継続して配信できる方</h3>
+                <p>※週4日以上の配信もしくは動画投稿</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <main>
-    <div class="wrapper">
-      <div class="main-img">
-        <img src="/img/main2.png" alt="" />
+        <section id="skills">
+          <div class="bg">
+            <h2 class="title fade-up">歓迎条件</h2>
+            <div class="items">
+              <div class="item">
+                <img src="/img/song.png" alt="" />
+                <h3>歌・ゲーム得意な方</h3>
+              </div>
+              <div class="item">
+                <img src="/img/skill.png" alt="" />
+                <h3>配信・ライブ経験がある方</h3>
+              </div>
+              <div class="item">
+                <img src="/img/plan.png" alt="" />
+                <h3>企画ができる方</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="flow">
+          <div class="bg">
+            <h2 class="title slide-left">選考フロー</h2>
+            <div class="flowlist">
+              <img src="/img/syorui.png" alt="書類選考の画像" />
+              <p>書類選考</p>
+            </div>
+
+            <div class="flowlist">
+              <img src="/img/first.png" alt="一次面接の画像" />
+              <p>一次面接</p>
+            </div>
+
+            <div class="flowlist">
+              <img src="/img/second.png" alt="二次面接の画像" />
+              <p>二次面接</p>
+            </div>
+
+            <div class="flowlist">
+              <img src="img/fainal.png" alt="最終面接の画像" />
+              <p>最終面接</p>
+            </div>
+
+            <div class="flowlist">
+              <img src="/img/pass.png" alt="合格の画像" />
+              <p>合格</p>
+            </div>
+            <div class="caution">
+              <p>※面接の回数は異なる場合がございます。</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="question">
+          <h2 class="title fade-up">よくある質問</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-question">
+                配信未経験でも応募できますか?
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  配信経験者を歓迎しておりますが、配信が初心者の方も歓迎しております。
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                海外在住でも応募可能ですか?
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  可能です。ただし日本語でのコミュニケーション取れる方になります。
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                どのようなサポートがありますか?
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  PCや配信に関わる機材の貸与があります。また配信経験がない方は研修等のサポートがございます。
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">
+                オーディションが不合格の場合理由を教えてくれますか?
+              </summary>
+
+              <div class="faq-answer">
+                <p>
+                  申し訳ございませんが、合否にかかわらず理由をお伝えすることは出来ません。
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary class="faq-question">費用は発生しますか?</summary>
+
+              <div class="faq-answer">
+                <p>
+                  オーディションでの費用は発生しませんが、面接に来ていただく際の交通費、諸費は自己負担になります。
+                </p>
+              </div>
+            </details>
+          </div>
+        </section>
       </div>
-      <div class="text">
-        <h2>次のスターは、<br />あなたかもしれない。</h2>
-        <p>新世代Vtuberプロジェクトメンバー募集</p>
-      </div>
-      <section id="about">
-        <div class="bg">
-          <div class="concept">
-            <h2 class="concept-text fade-up">ASTRALIVE Projectとは</h2>
-            <p class="fade-up">
-              ASTRALIVEは、個性あふれるタレントが集まるVTuber事務所です。<br />
-              ゲーム、歌、雑談、それぞれの好きが星のように輝き、<br />
-              配信を通してたくさんの出会いと楽しさを届けます。<br />
-              あなたの日常を彩る、新しい物語をここから。
-            </p>
-          </div>
-        </div>
+      <section id="entry">
+        <h2 class="catch zoom-in">あなたの“好き”が、誰かの光になる</h2>
+        <a href="contact.html" class="btn"
+          ><img src="/img/entry.png" alt="ENTRYボタン"
+        /></a>
       </section>
+    </main>
 
-      <section id="required">
-        <div class="bg">
-          <h2 class="title fade-up ">必須条件</h2>
-          <div class="items">
-            <div class="item">
-              <img src="/img/国籍不問.png" alt="" />
-              <h3>国籍・性別は問いません</h3>
-              <p>※日本語でコミュケーションができる方</p>
-            </div>
-            <div class="item">
-              <img src="/img/18歳.png" alt="" />
-              <h3>18歳以上の方</h3>
-              <p>※高校在学生は応募不可</p>
-            </div>
-            <div class="item">
-              <img src="/img/モニター.png" alt="" />
-              <h3>継続して配信できる方</h3>
-              <p>※週4日以上の配信もしくは動画投稿</p>
-            </div>
+    <footer id="footer">
+      <div class="info">
+        <div class="info-text">
+          <div class="adress">
+            <p>所在地</p>
+            <p>東京都渋谷区渋谷××× 丸ビル9F</p>
+          </div>
+          <div class="contact">
+            <p>連絡先</p>
+            <p>123-4567-8910</p>
+            <p>info@astralive.jp</p>
+          </div>
+          <div class="icon">
+            <a href="https://x.com/home?lang=ja"
+              ><img src="/img/x.svg" alt=""
+            /></a>
+            <a href="https://www.instagram.com/?hl=ja"
+              ><img src="/img/insta.svg" alt=""
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img src="/img/youtube.svg" alt=""
+            /></a>
           </div>
         </div>
-      </section>
-
-      <section id="skills">
-        <div class="bg">
-          <h2 class="title fade-up">歓迎条件</h2>
-          <div class="items">
-            <div class="item">
-              <img src="/img/song.png" alt="" />
-              <h3>歌・ゲーム得意な方</h3>
-            </div>
-            <div class="item">
-              <img src="/img/skill.png" alt="" />
-              <h3>配信・ライブ経験がある方</h3>
-            </div>
-            <div class="item">
-              <img src="/img/plan.png" alt="" />
-              <h3>企画ができる方</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="flow">
-        <div class="bg">
-          <h2 class="title slide-left">選考フロー</h2>
-          <div class="flowlist">
-            <img src="/img/syorui.png" alt="書類選考の画像" />
-            <p>書類選考</p>
-          </div>
-
-          <div class="flowlist">
-            <img src="/img/first.png" alt="一次面接の画像" />
-            <p>一次面接</p>
-          </div>
-
-          <div class="flowlist">
-            <img src="/img/second.png" alt="二次面接の画像" />
-            <p>二次面接</p>
-          </div>
-
-          <div class="flowlist">
-            <img src="img/fainal.png" alt="最終面接の画像" />
-            <p>最終面接</p>
-          </div>
-
-          <div class="flowlist">
-            <img src="/img/pass.png" alt="合格の画像" />
-            <p>合格</p>
-          </div>
-          <div class="caution">
-            <p>※面接の回数は異なる場合がございます。</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="question">
-        <h2 class="title fade-up">よくある質問</h2>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary class="faq-question">
-              配信未経験でも応募できますか?
-            </summary>
-
-            <div class="faq-answer">
-              <p>
-                配信経験者を歓迎しておりますが、配信が初心者の方も歓迎しております。
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              海外在住でも応募可能ですか?
-            </summary>
-
-            <div class="faq-answer">
-              <p>
-                可能です。ただし日本語でのコミュニケーション取れる方になります。
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              どのようなサポートがありますか?
-            </summary>
-
-            <div class="faq-answer">
-              <p>
-                PCや配信に関わる機材の貸与があります。また配信経験がない方は研修等のサポートがございます。
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">
-              オーディションが不合格の場合理由を教えてくれますか?
-            </summary>
-
-            <div class="faq-answer">
-              <p>
-                申し訳ございませんが、合否にかかわらず理由をお伝えすることは出来ません。
-              </p>
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">費用は発生しますか?</summary>
-
-            <div class="faq-answer">
-              <p>
-                オーディションでの費用は発生しませんが、面接に来ていただく際の交通費、諸費は自己負担になります。
-              </p>
-            </div>
-          </details>
-        </div>
-      </section>
-    </div>
-    <section id="entry">
-      <h2 class="catch zoom-in">あなたの“好き”が、誰かの光になる</h2>
-      <a href="contact.html" class="btn"><img src="/img/entry.png" alt="ENTRYボタン" /></a>
-    </section>
-  </main>
-
-  <footer id="footer">
-    <div class="info">
-      <div class="info-text">
-        <div class="adress">
-          <p>所在地</p>
-          <p>東京都渋谷区渋谷××× 丸ビル9F</p>
-        </div>
-        <div class="contact">
-          <p>連絡先</p>
-          <p>123-4567-8910</p>
-          <p>info@astralive.jp</p>
-        </div>
-        <div class="icon">
-          <a href="https://x.com/home?lang=ja"><img src="/img/x.svg" alt="" /></a>
-          <a href="https://www.instagram.com/?hl=ja"><img src="/img/insta.svg" alt="" /></a>
-          <a href="https://www.youtube.com/"><img src="/img/youtube.svg" alt="" /></a>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.364850061349!2d139.700491!3d35.662442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca88e44fa51%3A0x467bf310e5add731!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yR77yS4oiS77yS77yQ!5e0!3m2!1sja!2sjp!4v1778592891217!5m2!1sja!2sjp"
+            width="800"
+            height="500"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.364850061349!2d139.700491!3d35.662442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca88e44fa51%3A0x467bf310e5add731!2z44CSMTUwLTAwNDEg5p2x5Lqs6YO95riL6LC35Yy656We5Y2X77yR5LiB55uu77yR77yS4oiS77yS77yQ!5e0!3m2!1sja!2sjp!4v1778592891217!5m2!1sja!2sjp"
-          width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

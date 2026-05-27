@@ -72,13 +72,6 @@ a {
     transition: all 1s ease;
 }
 
-/* -----------------------------
-    loading
------------------------------ */
-.loading {
-    opacity: 0;
-    overflow: hidden;
-}
 
 
 /* -----------------------------
@@ -789,9 +782,22 @@ input[type="checkbox"] {
     color: #666;
     margin-top: 20px;
     font-size: 0.75rem;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
+.back {
+    background-color: #8b8888;
+    border-radius: 100px;
+    width: 10%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+
+.back a {
+    color: #fff;
+}
 
 /* -----------------------------
     thanks

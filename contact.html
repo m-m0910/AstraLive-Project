@@ -55,22 +55,21 @@
           </h2>
           <div class="form-group">
             <label>名前（本名）</label>
-            <input type="text" required="required" id="real-name" />
+            <input type="text" id="real-name" required/>
           </div>
           <div class="form-group">
             <label>名前（フリガナ）</label>
-
-            <input type="text" required="required" id="real-name-kana" />
+            <input type="text" id="real-name-kana" required/>
           </div>
           <div class="form-group">
             <label>年齢</label>
-            <input type="number" required="required" id="age" />
+            <input type="number" id="age" required/>
           </div>
           <div class="form-group">
             <label>性別</label>
 
             <div class="gender" id="gender">
-              <label><input type="radio" name="gender" /> 男性</label>
+              <label><input type="radio" name="gender" required/> 男性</label>
               <label><input type="radio" name="gender" /> 女性</label>
               <label><input type="radio" name="gender" /> その他</label>
             </div>
@@ -84,11 +83,11 @@
           </h2>
           <div class="form-group">
             <label>メールアドレス</label>
-            <input type="email" required="required" id="mail" />
+            <input type="email" id="mail" required/>
           </div>
           <div class="form-group">
             <label>電話番号</label>
-            <input type="tel" required="required" id="number" />
+            <input type="tel" id="number" required/>
           </div>
         </section>
 
@@ -100,7 +99,7 @@
 
           <div class="upload-date">
             <p>ここにファイルをドラッグ＆ドロップ</p>
-            <input type="file" id="fileInput" hidden required="required" />
+            <input type="file" id="fileInput" hidden required />
             <a
               href="#"
               class="upload-btn"
@@ -124,8 +123,7 @@
           <div class="form-group">
             <textarea
               placeholder="Vtuberになりたい理由、どんな活動がしたいか自由にお書きください"
-              id="reason" required="required"
-            ></textarea>
+              id="reason" required></textarea>
           </div>
         </section>
 
@@ -176,6 +174,10 @@
           <p>
             ご入力いただいた個人情報は、選考以外の目的では使用いたしません。<br />厳重に管理し、選考終了後は破棄いたします。
           </p>
+
+          <div class="back">
+            <a href="index.html">BACK</a>
+          </div>
         </section>
       </form>
 
