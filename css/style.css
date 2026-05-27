@@ -668,7 +668,7 @@ nav a {
 
 .form-group input {
     flex: 1;
-    border: 1px solid #c9b3d8;
+    border: 2px solid #c9b3d8;
     color: #292828;
 }
 
@@ -696,7 +696,7 @@ input[type="radio"] {
 
 textarea {
     width: 100%;
-    border:1px solid #c9b3d8;
+    border:2px solid #c9b3d8;
     box-sizing: border-box;
     outline: none;
     padding: 12px;
