@@ -508,7 +508,7 @@ nav a {
 .btn {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 .btn img{
@@ -874,6 +874,30 @@ nav li {
 }
 .catch {
     font-size: 1.75rem;
+}
+
+.section-title {
+    font-size: 1.3rem;
+}
+
+
+.form-group {
+    flex-direction: column;
+}
+
+.form-group label {
+    width: none;
+}
+
+.gender label {
+    padding-right: 10px;
+}
+#name,#adress,#date,#good,#aspiration {
+    width: 80%;
+}
+
+.btn {
+    margin-top: 20px;
 }
 
 
