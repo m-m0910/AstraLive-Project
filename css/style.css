@@ -838,7 +838,7 @@ nav li {
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 30px;
 }
 
@@ -864,6 +864,11 @@ nav li {
 
 .flowlist {
     height: 85px;
+    width: 90%;
+}
+
+.flowlist img {
+    width: 27%;
 }
 
 .flowlist p {
@@ -874,8 +879,13 @@ nav li {
 
     bottom: -5px;
 }
+
+.faq-question {
+    padding: 15px 70px 10px 30px;
+    font-size: 0.75rem;
+}
 .catch {
-    font-size: 1.75rem;
+    font-size: 1rem;
 }
 
 .section-title {
@@ -883,7 +893,7 @@ nav li {
 }
 
 
-.form-group {
+.form-group {   
     flex-direction: column;
 }
 
