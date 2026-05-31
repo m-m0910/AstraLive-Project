@@ -827,9 +827,16 @@ input[type="checkbox"] {
     .concept {
     margin: 65px 0 65px 0;
 }
+    .concept h2 {
+        font-size: 30px;
+    }
+    
+    .concept p {
+        font-size: 17px;
+    }
 
 nav li {
-    font-size: 0.85rem;
+    font-size: 0.65rem;
 }
 
 .text {
@@ -867,8 +874,14 @@ nav li {
     width: 90%;
 }
 
+
+
 .flowlist img {
-    width: 27%;
+    width: 17%;
+}
+
+.flowlist:nth-of-type(3) img ,.flowlist:nth-of-type(5) img {
+    width: 17%;
 }
 
 .flowlist p {
