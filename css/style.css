@@ -112,8 +112,44 @@ nav ul{
 
 nav a {
     font-family: "Kaisei Decol", serif;
-    
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    width: 76px;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+    background-color: #d2bcfa;
+}
+
+.hamburger span{
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    left: 26px;
+    position: absolute;
+
+}
+.hamburger span:first-of-type {
+    top: 20px;
+}
+
+.hamburger span:nth-child(2){
+    top: 35px;
+}
+
+.hamburger span:last-of-type {
+    top: 50px;
+}
+
+
 
 .entry-btn {
     position: relative;
@@ -253,7 +289,7 @@ nav a {
 
 .text {
     position: absolute;
-    top: 265px;
+    top: 4%;
     left: 200px;
     font-family: "Rampart One", sans-serif;
 }
@@ -555,7 +591,6 @@ nav a {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 0 200px;
 }
 
 .info-text {
@@ -821,12 +856,17 @@ input[type="checkbox"] {
 
 @media (max-width: 768px){
 
+    body {
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
     .wrapper{
-        margin: 90%;
+        margin: 95%;
         margin: 0 auto;
     }
     .concept {
-    margin: 65px 0 65px 0;
+    margin: 65px auto;
 }
     .concept h2 {
         font-size: 30px;
@@ -836,10 +876,14 @@ input[type="checkbox"] {
         font-size: 17px;
     }
 
+
+.hamburger {
+    display: flex;
+}
 nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    display: none;
+    flex-direction: column;
+    
 }
 
 
@@ -847,14 +891,27 @@ nav li {
     font-size: 0.65rem;
 }
 
+
+
+.logo img {
+    width: 100px;
+    align-items: center;
+}
+
 .text {
-    top: 25%;
-    left: 25%;
     width: 90%;
+    position: static;
+    margin-left: 20px;
 }
 
 .text h2 {
-    font-size: 100%;
+    font-size: 1rem;
+}
+
+.main-img {
+    text-align: center;
+    height: auto;
+    display: block;
 }
 
 .title {

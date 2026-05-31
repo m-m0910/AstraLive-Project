@@ -63,7 +63,7 @@ $(window).on("scroll load",function () {    // concept-textクラスに対して
       // したタイミングで要素を表示
       if (scroll > target - windowHeight + 100) {
         $(this).css("opacity", "1");
-        $(this).css("transform", "scale(1.5)");
+        $(this).css("transform", "scale(1)");
       }
     });
   });
