@@ -819,7 +819,7 @@ input[type="checkbox"] {
 *----------------------------- */
 
 
-@media (max-width:100%){
+@media (max-width: 900px){
 
     .wrapper{
         margin: 0 50px;
@@ -842,6 +842,10 @@ nav li {
 .text {
     top: 200px;
     left: 130px;
+}
+
+.text h2 {
+    font-size: 100%;
 }
 
 .title {
