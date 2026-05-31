@@ -819,10 +819,11 @@ input[type="checkbox"] {
 *----------------------------- */
 
 
-@media (max-width: 900px){
+@media (max-width: 768px){
 
     .wrapper{
-        margin: 0 50px;
+        margin: 90%;
+        margin: 0 auto;
     }
     .concept {
     margin: 65px 0 65px 0;
@@ -835,13 +836,21 @@ input[type="checkbox"] {
         font-size: 17px;
     }
 
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+
 nav li {
     font-size: 0.65rem;
 }
 
 .text {
-    top: 200px;
-    left: 130px;
+    top: 25%;
+    left: 25%;
+    width: 90%;
 }
 
 .text h2 {
@@ -889,7 +898,7 @@ nav li {
 }
 
 .flowlist p {
-    font-size: 1.7rem;
+    font-size: 1rem;
 }
 
 .flowlist:nth-of-type(3) img ,.flowlist:nth-of-type(5) img {
@@ -909,6 +918,11 @@ nav li {
     font-size: 1.3rem;
 }
 
+.map iframe {
+    width: 100%;
+    height: 300px;
+}
+
 
 .form-group {   
     flex-direction: column;
@@ -922,7 +936,7 @@ nav li {
     padding-right: 10px;
 }
 #name,#adress,#date,#good,#aspiration {
-    width: 80%;
+    width: 100%;
 }
 
 .btn {
