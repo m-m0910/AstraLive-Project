@@ -819,7 +819,7 @@ input[type="checkbox"] {
 *----------------------------- */
 
 
-@media (max-width:900px){
+@media (max-width:750px){
 
     .wrapper{
         margin: 0 50px;
@@ -912,6 +912,12 @@ nav li {
     margin-top: 20px;
 }
 
+.form-group textarea::placeholder {
+    font-size: 0.7rem;
+}
 
+.back {
+    width: 20%;
 
+}
 }
