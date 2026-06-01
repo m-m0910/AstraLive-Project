@@ -871,8 +871,7 @@ input[type="checkbox"] {
 *----------------------------- */
 
 
-@media (max-width: 768px){
-
+@media screen and (max-width: 768px){
     body {
         width: 100%;
         /* overflow: hidden; */
@@ -889,16 +888,16 @@ input[type="checkbox"] {
     }
     
     .concept p {
-        font-size: 17px;
+        font-size: 13px;
     }
+
+#header {
+    height: 74px;
+}
 
 
 .hamburger {
     display: block;
-}
-
-nav {
-    visibility: hidden;
 }
 
 nav .active{
@@ -911,19 +910,18 @@ nav .active{
 }
 
 
-
 nav li {
-    font-size: 0.65rem;
+    display: none;
 }
 
 .entry-btn {
-    visibility: hidden;
+    position: relative;
+    right:78px;
 }
 
 
 
 .logo img {
-    width: 100px;
     align-items: center;
 }
 
