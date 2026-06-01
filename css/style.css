@@ -84,18 +84,17 @@ header{
     z-index: 10;
 }
 
-
-nav li {
-    padding-right: 20px;
-    
-}
-
-
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 0;
+}
+
+
+nav li {
+    padding-right: 20px;
+    
 }
 
 nav {
@@ -131,23 +130,40 @@ nav a {
 .hamburger span{
     display: block;
     background-color: #fff;
-    width: 30px;
+    width: 50%;
     height: 2px;
-    left: 26px;
+    left: 22px;
     position: absolute;
+    transition: 0.3s ease;
 
 }
 .hamburger span:first-of-type {
-    top: 20px;
+    top: 36%;
 }
 
 .hamburger span:nth-child(2){
-    top: 35px;
+    top: 50%;
 }
 
 .hamburger span:last-of-type {
-    top: 50px;
+    top: 64%;
 }
+
+.open .hamburger span:first-of-type {
+    top: 50%;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+
+.open .hamburger span:nth-of-type(2),
+.open .hamburger span:nth-of-type(3){
+    top: 50%;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+
+
 
 
 
@@ -545,6 +561,7 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    
 }
 
 .btn img{
@@ -862,8 +879,7 @@ input[type="checkbox"] {
     }
 
     .wrapper{
-        margin: 95%;
-        margin: 0 auto;
+       margin: 0 25px;
     }
     .concept {
     margin: 65px auto;
@@ -878,17 +894,30 @@ input[type="checkbox"] {
 
 
 .hamburger {
-    display: flex;
+    display: block;
 }
-nav ul {
-    display: none;
-    flex-direction: column;
-    
+
+nav {
+    visibility: hidden;
 }
+
+nav .active{
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #ffF;
+}
+
 
 
 nav li {
     font-size: 0.65rem;
+}
+
+.entry-btn {
+    visibility: hidden;
 }
 
 

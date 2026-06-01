@@ -78,3 +78,10 @@ $(this)
 
 });
 
+  $(".hamburger").on("click", function () {
+    $("header").toggleClass("open");
+  });
+  // メニューのリンクをクリックした時
+  $("navi a").on("click", function () {
+    $("header").toggleClass("open");
+  });
