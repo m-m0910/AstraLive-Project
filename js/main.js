@@ -82,6 +82,6 @@ $(this)
     $("header").toggleClass("open");
   });
   // メニューのリンクをクリックした時
-  $("navi a").on("click", function () {
+  $("nav li").on("click", function () {
     $("header").toggleClass("open");
   });
