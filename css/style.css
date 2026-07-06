@@ -935,10 +935,14 @@ input[type="checkbox"] {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-20px);
+<<<<<<< HEAD
+=======
+    
+>>>>>>> c4183d4 (no message)
 }
 
 .entry-btn {
-    right:78px;
+    right: 78px;
     transform: none;
     transition: none;
     -webkit-tap-highlight-color: transparent;
