@@ -112,7 +112,6 @@ nav {
 }
 
 
-
 .hamburger {
     display: none;
     flex-direction: column;
@@ -161,23 +160,21 @@ nav {
     transform: rotate(45deg);
 }
 
-    .entry-btn {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 140px;
-        height: 36px;
-        border-radius: 100px;
-        background: rgba(255,255,255,.72);
-        overflow: hidden;
-        cursor: pointer;
-        box-shadow:
+.entry-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    border-radius: 100px;
+    background: rgba(255,255,255,.72);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:
         0 4px 18px rgba(180,140,255,.18),
-        inset 0 1px 0 rgba(255,255,255,.85);
-        transition:
-        transform .35s ease,
-        box-shadow .35s ease;
+    inset 0 1px 0 rgba(255,255,255,.85);
+    transition: transform .35s ease,box-shadow .35s ease;
     }
 
     .entry-btn::before {
@@ -431,13 +428,13 @@ nav {
 }
 
 .flowlist img {
-    width:20%;
+    width:17%;
     border-radius: 50%;
     margin-left: -15px
 }
 
 .flowlist:nth-of-type(3) img ,.flowlist:nth-of-type(5) img {
-    width:20%;
+    width:17%;
     position: relative;
 
     bottom: -8px;
