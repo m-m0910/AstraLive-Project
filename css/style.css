@@ -871,6 +871,20 @@ input[type="checkbox"] {
 /* -----------------------------
     privacy
 *----------------------------- */
+
+.policy body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    color: #666;
+}
 .policy {
     text-align: center;
     padding-top: 50px;
