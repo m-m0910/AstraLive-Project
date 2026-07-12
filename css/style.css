@@ -82,14 +82,12 @@ header{
     background-color: #fff;
     position: fixed;
     z-index: 10;
-}
-
-#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     top: 0;
 }
+
 
 
 nav li {
@@ -872,46 +870,82 @@ input[type="checkbox"] {
     privacy
 *----------------------------- */
 
-.policy body {
+#privacy{
     margin: 0;
     padding: 0;
     width: 100%;
     background-size: cover;
     position: relative;
-    background-image: ;
+    background-image: url(../img/background.svg);
     background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
     overflow-x: hidden;
     color: #666;
 }
-.policy {
-    text-align: center;
-    padding-top: 50px;
+
+#privacy header {
+    background-color: transparent;
 }
-.policy h1 {
+
+#privacy main {
+    padding: 100px 150px 0 150px;
+    margin: 0 auto;
+
+}
+
+#privacy .logo img {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero {
+    text-align: center;
+}
+
+.intro-card {
+    background-color: #fff;
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 35px;
+    color: #7a72a0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.intro-card strong {
+    color: #3a3358;
+}
+
+.articles {
+    margin-top: 60px;
+    color: #7a72a0;
+}
+
+.article-head {
+    display: flex;
+    align-items: center;
     padding-bottom: 20px;
 }
 
-.policy h2 {
-    padding-bottom: 10px;
-}
 
-.privacy-back {
-    margin: 50px auto 0;
-    text-align: center;
-    background-color: #dfafe2;
-    border-radius: 30px;
-    width: 15%;
-
-    opacity: 0.7;
-}
-
-.privacy-back a {
-    color: #fff;
+.articles ol{
+    padding-left: 1.5rem;
 }
 
 
+.article-num {
+    color: #e666a8;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.article-head h2 {
+    color: #3a3358;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
 
 /* -----------------------------
     SP
