@@ -924,15 +924,36 @@ input[type="checkbox"] {
     color: #7a72a0;
 }
 
+#privacy article {
+    border-left: 2px solid rgba(139, 107, 255, 0.35);
+    padding-left: 10px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#privacy article::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #8b6bff;
+    left: -6px;
+    top: 5px;
+    box-shadow: 0 0 10px 3px rgba(139, 107, 255, 0.5);
+}
+
+
 .article-head {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
+
 }
 
 
 .articles ol{
-    padding-left: 1.5rem;
+    padding-left: 2rem;
 }
 
 
