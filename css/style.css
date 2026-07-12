@@ -901,11 +901,12 @@ input[type="checkbox"] {
 
 .hero {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .intro-card {
     background-color: #fff;
-    width: 65%;
+    width: 68%;
     margin: 0 auto;
     border-radius: 20px;
     padding: 35px;
