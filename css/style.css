@@ -751,7 +751,7 @@ textarea::placeholder{
     font-size: 0.9rem;
 }
 
-span {
+#contact span {
     color: #ff5b68;
     font-size: 1rem;
     font-family: "Rampart One", sans-serif;
@@ -968,6 +968,31 @@ input[type="checkbox"] {
     padding-left: 10px;
     font-size: 1.2rem;
 }
+
+.contact-box{
+    width: 60%;
+    background: rgba(139, 107, 255, 0.06);
+    border-radius: 20px;
+    color: #7a72a0;
+    font-size: 0.85rem;
+    padding: 20px;
+    border:1px solid rgba(127, 103, 212, 0.17);
+    margin-top: 15px;
+
+}
+
+.contact-box strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #3a3358;
+    font-weight: 600;
+}
+
+.pill {
+    padding-bottom: 5px;
+}
+
 
 /* -----------------------------
     SP
