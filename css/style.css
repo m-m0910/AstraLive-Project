@@ -920,8 +920,10 @@ input[type="checkbox"] {
 }
 
 .articles {
-    margin-top: 60px;
+    margin: 60px;
     color: #7a72a0;
+    width: 60%;
+
 }
 
 #privacy article {
