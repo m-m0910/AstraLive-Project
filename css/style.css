@@ -892,6 +892,7 @@ input[type="checkbox"] {
     padding: 100px 150px 0 150px;
     margin: 0 auto;
 
+
 }
 
 #privacy .logo img {
@@ -906,13 +907,13 @@ input[type="checkbox"] {
 
 .intro-card {
     background-color: #fff;
-    width: 68%;
     margin: 0 auto;
     border-radius: 20px;
     padding: 35px;
     color: #7a72a0;
     font-size: 15px;
     text-align: center;
+
 }
 
 .intro-card strong {
@@ -920,11 +921,15 @@ input[type="checkbox"] {
 }
 
 .articles {
-    margin: 60px;
+    padding: 60px 0 0 0;
     color: #7a72a0;
-    width: 60%;
-
 }
+
+article p{
+    padding-left: 10px;
+    font-size: 0.85rem;
+}
+
 
 #privacy article {
     border-left: 2px solid rgba(139, 107, 255, 0.35);
@@ -956,6 +961,7 @@ input[type="checkbox"] {
 
 .articles ol{
     padding-left: 2rem;
+    font-size: 0.85rem;
 }
 
 
@@ -972,15 +978,13 @@ input[type="checkbox"] {
 }
 
 .contact-box{
-    width: 60%;
     background: rgba(139, 107, 255, 0.06);
     border-radius: 20px;
     color: #7a72a0;
     font-size: 0.85rem;
     padding: 20px;
     border:1px solid rgba(127, 103, 212, 0.17);
-    margin-top: 15px;
-
+    margin: 15px 0 0 10px;
 }
 
 .contact-box strong {
@@ -993,6 +997,16 @@ input[type="checkbox"] {
 
 .pill {
     padding-bottom: 5px;
+}
+
+.agree-note {
+    text-align: center;
+}
+
+#privacy footer {
+    text-align: right;
+    position: relative;
+    right: 15px;
 }
 
 
