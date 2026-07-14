@@ -913,6 +913,7 @@ input[type="checkbox"] {
     color: #7a72a0;
     font-size: 15px;
     text-align: center;
+    width: 68%;
 
 }
 
@@ -923,6 +924,7 @@ input[type="checkbox"] {
 .articles {
     padding: 60px 0 0 0;
     color: #7a72a0;
+    padding-left: 68%;
 }
 
 article p{
