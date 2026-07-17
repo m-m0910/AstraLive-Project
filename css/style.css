@@ -905,6 +905,24 @@ input[type="checkbox"] {
     margin-bottom: 40px;
 }
 
+.hero h1 {
+    display: block;
+    background: linear-gradient(90deg,  rgba(255, 22, 22, 1), rgba(5, 0, 255, 1));
+    background: -webkit-linear-gradient(0deg  rgba(255, 22, 22, 1), rgba(5, 0, 255, 1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.eyebrow {
+    letter-spacing: 0.3rem;
+}
+
+.eyebrow::before,.eyebrow::after {
+    content: "★";
+    color: gold;
+
+}
 .intro-card {
     background-color: #fff;
     margin: 0 auto;
@@ -922,9 +940,9 @@ input[type="checkbox"] {
 }
 
 .articles {
-    padding: 60px 0 0 0;
+    padding-top: 60px;
     color: #7a72a0;
-    padding-left: 68%;
+    padding-left: 17%;
 }
 
 article p{
@@ -987,6 +1005,7 @@ article p{
     padding: 20px;
     border:1px solid rgba(127, 103, 212, 0.17);
     margin: 15px 0 0 10px;
+    width: 80%;
 }
 
 .contact-box strong {
@@ -1009,6 +1028,14 @@ article p{
     text-align: right;
     position: relative;
     right: 15px;
+}
+
+.back-cta {
+    opacity: 0.5;
+}
+
+.back-cta:hover {
+    opacity: 1;
 }
 
 
