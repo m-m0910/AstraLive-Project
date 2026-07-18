@@ -1030,6 +1030,8 @@ article p{
 
 .back-cta {
     opacity: 0.5;
+    width: 13%;
+    margin-top: 50px;
 }
 
 .back-cta:hover {
