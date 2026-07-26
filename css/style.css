@@ -348,6 +348,11 @@ nav {
     display: flex;
 }
 
+.required {
+    color: #ff4d4a;
+}
+
+
 #required .item img {
     width: 80%;
     box-shadow: 0px 0px 12px #00000014;
@@ -751,12 +756,7 @@ textarea::placeholder{
     font-size: 0.9rem;
 }
 
-#contact span {
-    color: #ff5b68;
-    font-size: 1rem;
-    font-family: "Rampart One", sans-serif;
-    padding-left: 5px;
-}
+
 
 .any {
     color: #c9b3d8;
